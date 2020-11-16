@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task # 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-B1-CRd">
-                                <rect key="frame" x="64" y="151" width="285" height="42"/>
+                                <rect key="frame" x="64" y="151" width="286" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="8AY-5J-fxo"/>
                                     <constraint firstAttribute="width" constant="285" id="KQN-sh-8gJ"/>
@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task # 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhm-pb-qzr">
-                                <rect key="frame" x="64" y="225" width="285" height="42"/>
+                                <rect key="frame" x="64" y="225" width="286" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="eQJ-0B-M02"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="iG6-L7-fnq"/>
@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task # 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqo-1t-aNS">
-                                <rect key="frame" x="64" y="299" width="285" height="42"/>
+                                <rect key="frame" x="64" y="299" width="286" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="FY8-af-lRI"/>
                                     <constraint firstAttribute="width" constant="285" id="oBk-vj-fgy"/>
@@ -48,9 +48,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-Zg-ceK">
-                                <rect key="frame" x="159" y="364" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a task to be done" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-Zg-ceK">
+                                <rect key="frame" x="65" y="373" width="285" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Alm-fU-BIE"/>
+                                    <constraint firstAttribute="width" constant="285" id="mBv-ug-yMa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -64,10 +67,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vhm-pb-qzr" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="5EZ-2a-U7B"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="vhm-pb-qzr" secondAttribute="trailing" constant="64" id="61f-NE-qaJ"/>
                             <constraint firstItem="q9y-B1-CRd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="6mD-pS-H6f"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Jqo-1t-aNS" secondAttribute="trailing" constant="64" id="CCx-ve-MB7"/>
                             <constraint firstItem="Jqo-1t-aNS" firstAttribute="top" secondItem="vhm-pb-qzr" secondAttribute="bottom" constant="32" id="MtW-yn-rzk"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Zc5-Zg-ceK" secondAttribute="trailing" constant="64" id="NBZ-iO-bR2"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="32" id="Qnp-4N-sxd"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="64" id="XKM-aD-SpJ"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="q9y-B1-CRd" secondAttribute="trailing" constant="64" id="Z1P-Rt-R2x"/>
+                            <constraint firstItem="Zc5-Zg-ceK" firstAttribute="top" secondItem="Jqo-1t-aNS" secondAttribute="bottom" constant="32" id="b4O-rQ-Jxv"/>
                             <constraint firstItem="q9y-B1-CRd" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="32" id="cWG-Ch-Cuh"/>
                             <constraint firstItem="Jqo-1t-aNS" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="gpk-yn-2LF"/>
                             <constraint firstItem="vhm-pb-qzr" firstAttribute="top" secondItem="q9y-B1-CRd" secondAttribute="bottom" constant="32" id="wQN-8S-xco"/>
