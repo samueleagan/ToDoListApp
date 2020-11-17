@@ -9,13 +9,30 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
 
 
 }
 
+extension UIViewController: UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, selectRow indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+}
+
+extension UIViewController: UITableViewDataSource {
+    
+}
 
