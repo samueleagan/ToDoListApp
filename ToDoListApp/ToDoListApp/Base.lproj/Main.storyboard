@@ -20,14 +20,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Add"/>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="To Do List" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="To Do List" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="64" y="76" width="286" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-eS-fis">
-                                <rect key="frame" x="71" y="297" width="278" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-eS-fis">
+                                <rect key="frame" x="68" y="297" width="278" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5JL-eR-M5f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Delete"/>
                             </button>
@@ -38,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="431" id="SKe-jB-Fy5"/>
                                 </constraints>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter a task to be done" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-Zg-ceK">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter a task to be done" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zc5-Zg-ceK">
                                 <rect key="frame" x="71" y="162" width="278" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="C7q-5h-68h"/>
@@ -53,17 +56,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="3EZ-A9-6Ue"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="top" secondItem="v43-9a-JI5" secondAttribute="bottom" constant="7" id="4ip-GL-HvL"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="68" id="B2B-Bj-eVa"/>
+                            <constraint firstItem="v43-9a-JI5" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="112" id="BbK-lg-aSE"/>
                             <constraint firstItem="OX8-lu-MGX" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="CWp-Mg-b5l"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="top" secondItem="v43-9a-JI5" secondAttribute="bottom" constant="7" id="Jhf-pb-LW1"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="32" id="Qnp-4N-sxd"/>
                             <constraint firstItem="OX8-lu-MGX" firstAttribute="top" secondItem="P3k-eS-fis" secondAttribute="bottom" constant="8" id="TuD-YX-XT6"/>
                             <constraint firstItem="OX8-lu-MGX" firstAttribute="centerX" secondItem="v43-9a-JI5" secondAttribute="centerX" id="WM3-C4-lJk"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="64" id="XKM-aD-SpJ"/>
+                            <constraint firstItem="v43-9a-JI5" firstAttribute="top" secondItem="Zc5-Zg-ceK" secondAttribute="bottom" constant="22" id="Z7x-M5-NBU"/>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="52" id="bEU-3W-jAJ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Zc5-Zg-ceK" secondAttribute="trailing" constant="68" id="cTd-zo-OLH"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="trailing" secondItem="v43-9a-JI5" secondAttribute="trailing" id="dgN-yh-lms"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="P3k-eS-fis" secondAttribute="trailing" constant="68" id="eDo-la-Qvl"/>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="68" id="eza-hp-xt1"/>
                             <constraint firstItem="OX8-lu-MGX" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="g1B-AO-cjh"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="OX8-lu-MGX" secondAttribute="bottom" constant="27" id="ieS-Fi-te6"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="trailing" secondItem="Zc5-Zg-ceK" secondAttribute="trailing" id="k2h-jJ-feJ"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="wUU-t0-eya"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="leading" secondItem="Zc5-Zg-ceK" secondAttribute="leading" id="wZn-oc-6nE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -82,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LcF-df-vVI">
-                                <rect key="frame" x="20" y="81" width="374" height="611"/>
+                                <rect key="frame" x="20" y="135" width="374" height="557"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="TWi-BF-ZAg"/>
