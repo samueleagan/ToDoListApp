@@ -26,12 +26,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v43-9a-JI5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v43-9a-JI5">
                                 <rect key="frame" x="61" y="283" width="285" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="4Qw-vI-Qm6"/>
-                                    <constraint firstAttribute="height" constant="54" id="d64-jf-tCd"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Add"/>
                             </button>
@@ -41,12 +38,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-eS-fis">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-eS-fis">
                                 <rect key="frame" x="68" y="363" width="278" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="286" id="Sy9-fc-B34"/>
-                                    <constraint firstAttribute="height" constant="50" id="q3f-TC-uSP"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Delete"/>
                             </button>
@@ -54,14 +48,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="3EZ-A9-6Ue"/>
-                            <constraint firstItem="P3k-eS-fis" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="68" id="Fvi-JF-5or"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="32" id="Qnp-4N-sxd"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="64" id="XKM-aD-SpJ"/>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="52" id="bEU-3W-jAJ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Zc5-Zg-ceK" secondAttribute="trailing" constant="68" id="cTd-zo-OLH"/>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="68" id="eza-hp-xt1"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="P3k-eS-fis" secondAttribute="trailing" constant="68" id="jjQ-dw-0yj"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="v43-9a-JI5" secondAttribute="trailing" constant="68" id="qJO-XJ-Ysi"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="wUU-t0-eya"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -81,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LcF-df-vVI">
-                                <rect key="frame" x="76" y="149" width="262" height="496"/>
+                                <rect key="frame" x="76" y="81" width="262" height="564"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="TWi-BF-ZAg"/>
@@ -89,20 +80,23 @@
                                 </constraints>
                             </tableView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Task History" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-81-T1s">
-                                <rect key="frame" x="113" y="79" width="188" height="43"/>
+                                <rect key="frame" x="68" y="84" width="278" height="43"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="HqS-YX-bCs"/>
+                                    <constraint firstAttribute="height" constant="43" id="KCh-lQ-OlZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="uSE-81-T1s" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="35" id="1c5-k1-au9"/>
-                            <constraint firstItem="uSE-81-T1s" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="3LG-Dr-9TJ"/>
+                            <constraint firstItem="uSE-81-T1s" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="68" id="Eux-BQ-5RL"/>
                             <constraint firstItem="LcF-df-vVI" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="76" id="FAh-fO-lP6"/>
+                            <constraint firstItem="uSE-81-T1s" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="40" id="HEX-Gr-ZWs"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="LcF-df-vVI" secondAttribute="bottom" constant="168" id="Yx1-Ei-mJq"/>
-                            <constraint firstItem="LcF-df-vVI" firstAttribute="top" secondItem="uSE-81-T1s" secondAttribute="bottom" constant="27" id="gcx-Gb-EO7"/>
-                            <constraint firstItem="uSE-81-T1s" firstAttribute="centerX" secondItem="LcF-df-vVI" secondAttribute="centerX" id="uXc-qb-fY6"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="uSE-81-T1s" secondAttribute="trailing" constant="68" id="sEm-05-IjY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
