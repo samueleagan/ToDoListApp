@@ -24,28 +24,43 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v43-9a-JI5">
+                                <rect key="frame" x="65" y="283" width="285" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3dn-Ox-Jf8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="286" id="Jcp-my-cLg"/>
+                                    <constraint firstAttribute="width" constant="285" id="bgW-7B-ntE"/>
+                                    <constraint firstAttribute="height" constant="54" id="gZ5-bw-qxP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="To Do List" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="64" y="76" width="286" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v43-9a-JI5">
-                                <rect key="frame" x="65" y="283" width="285" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-eS-fis">
+                                <rect key="frame" x="64" y="363" width="286" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="bgW-7B-ntE"/>
-                                    <constraint firstAttribute="height" constant="54" id="gZ5-bw-qxP"/>
+                                    <constraint firstAttribute="height" constant="50" id="51C-aX-cNR"/>
+                                    <constraint firstAttribute="width" constant="286" id="E7y-A2-8wd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Add"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Delete"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="3EZ-A9-6Ue"/>
+                            <constraint firstItem="v43-9a-JI5" firstAttribute="leading" secondItem="Zc5-Zg-ceK" secondAttribute="leading" id="GJd-0g-I4a"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="32" id="Qnp-4N-sxd"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="64" id="XKM-aD-SpJ"/>
                             <constraint firstItem="Zc5-Zg-ceK" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="52" id="bEU-3W-jAJ"/>
+                            <constraint firstItem="P3k-eS-fis" firstAttribute="top" secondItem="v43-9a-JI5" secondAttribute="bottom" constant="26" id="k8m-fJ-XXO"/>
+                            <constraint firstItem="v43-9a-JI5" firstAttribute="top" secondItem="Zc5-Zg-ceK" secondAttribute="bottom" constant="55" id="mtS-b2-4Co"/>
+                            <constraint firstItem="v43-9a-JI5" firstAttribute="trailing" secondItem="P3k-eS-fis" secondAttribute="trailing" id="p5j-K9-Kr7"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="64" id="wUU-t0-eya"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
