@@ -1,10 +1,3 @@
-//
-//  FirstViewController.swift
-//  ToDoListApp
-//
-//  Created by student on 11/9/20.
-//  Copyright © 2020 CodeWithChris. All rights reserved.
-//
 
 import UIKit
 
@@ -31,7 +24,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
             tasks.append(Task(taskText: textItem))
 
             tableView.beginUpdates()
-            tableView.insertRows(at: [IndexPath.init(row: tasks.count-1, section: 0)], with: .automatic)
+            tableView.insertRows(at: [IndexPath.init(row: tasks.count - 1, section: 0)], with: .automatic)
             tableView.endUpdates()
         }
         textField.text = nil

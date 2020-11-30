@@ -1,10 +1,3 @@
-//
-//  Task.swift
-//  ToDoListApp
-//
-//  Created by samueleagan on 11/16/20.
-//  Copyright © 2020 CodeWithChris. All rights reserved.
-//
 
 import UIKit
 
