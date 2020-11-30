@@ -92,6 +92,7 @@
                     <tabBarItem key="tabBarItem" title="Tasks" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="tableView" destination="OX8-lu-MGX" id="wKf-IY-1Zq"/>
+                        <outlet property="textField" destination="Zc5-Zg-ceK" id="JZ1-Gy-c2G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
