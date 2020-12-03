@@ -39,7 +39,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rst-7U-XvQ"/>
+                    <navigationItem key="navigationItem" id="rst-7U-XvQ">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="vK9-y6-eYm"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="mjp-hK-zWJ" id="ECl-gy-rfZ"/>
                     </connections>
@@ -62,6 +64,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2o-wX-VP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1986.9565217391305" y="122.54464285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sEQ-Uq-oSi">
+            <objects>
+                <viewController id="Itp-QC-chC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tqB-kL-ONd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eeI-Jq-pYg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrE-vC-GqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="838"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yxq-cu-LFO">
