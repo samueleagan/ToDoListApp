@@ -31,11 +31,35 @@ class ViewController: UIViewController {
         
         
         // get all current saved tasks
+        updateTasks()
+    }
+    
+    func updateTasks() {
+        
+        guard let count = UserDefaults().value(forKey: "count") as? Int else {
+            return
+        }
+        
+        for x in 0..<count {
+            
+            if let task = UserDefaults().value(forKey: "task_\(x+1)") as? String  {
+                tasks.append(task)
+                
+            }
+            
+        }
+        
     }
     
     @IBAction func didTapAdd() {
         let vc = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
         vc.title = "New Task"
+        vc.update = {
+            DispatchQueue.main.async {
+            self.updateTasks()
+            }
+            
+        }
         navigationController?.pushViewController(vc, animated: true)
         
     }

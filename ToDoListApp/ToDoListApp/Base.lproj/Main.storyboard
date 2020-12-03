@@ -77,10 +77,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-GS-xSd">
-                                <rect key="frame" x="20" y="64" width="374" height="95"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-GS-xSd">
+                                <rect key="frame" x="20" y="64" width="374" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="6qi-ci-51Z"/>
+                                    <constraint firstAttribute="height" constant="52" id="5gB-rj-gs3"/>
+                                    <constraint firstAttribute="width" constant="97" id="J7k-yR-xQM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -88,15 +89,17 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eeI-Jq-pYg" firstAttribute="trailing" secondItem="Pcn-GS-xSd" secondAttribute="trailing" constant="20" id="62r-Zc-P3J"/>
-                            <constraint firstItem="Pcn-GS-xSd" firstAttribute="top" secondItem="eeI-Jq-pYg" secondAttribute="top" constant="20" id="O7G-l1-OqK"/>
-                            <constraint firstItem="eeI-Jq-pYg" firstAttribute="bottom" secondItem="Pcn-GS-xSd" secondAttribute="bottom" constant="703" id="bdf-OM-wjK"/>
-                            <constraint firstItem="Pcn-GS-xSd" firstAttribute="leading" secondItem="eeI-Jq-pYg" secondAttribute="leading" constant="20" id="hZ9-RU-W11"/>
+                            <constraint firstItem="Pcn-GS-xSd" firstAttribute="top" secondItem="eeI-Jq-pYg" secondAttribute="top" constant="20" id="B1D-RR-zlk"/>
+                            <constraint firstItem="eeI-Jq-pYg" firstAttribute="bottom" secondItem="Pcn-GS-xSd" secondAttribute="bottom" constant="703" id="TR5-eX-g2U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eeI-Jq-pYg"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="save" id="OHC-qh-jtl"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="field" destination="Pcn-GS-xSd" id="43R-J4-53V"/>
+                        <outlet property="field" destination="Pcn-GS-xSd" id="U52-oh-BxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrE-vC-GqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
