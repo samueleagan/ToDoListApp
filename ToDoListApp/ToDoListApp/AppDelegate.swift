@@ -1,3 +1,10 @@
+//
+//  AppDelegate.swift
+//  ToDoListApp
+//
+//  Created by student on 12/3/20.
+//  Copyright © 2020 CodeWithChris. All rights reserved.
+//
 
 import UIKit
 
