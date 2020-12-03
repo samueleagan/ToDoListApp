@@ -40,7 +40,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="rst-7U-XvQ">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="vK9-y6-eYm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="vK9-y6-eYm">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="4Iv-na-wAU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="mjp-hK-zWJ" id="ECl-gy-rfZ"/>
@@ -50,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Task View Controller-->
         <scene sceneID="Yrs-vF-oiZ">
             <objects>
-                <viewController id="ian-3e-rRw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="task" id="ian-3e-rRw" customClass="TaskViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FZX-em-ViJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,16 +69,35 @@
             </objects>
             <point key="canvasLocation" x="1986.9565217391305" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="sEQ-Uq-oSi">
             <objects>
-                <viewController id="Itp-QC-chC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="Itp-QC-chC" customClass="EntryViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tqB-kL-ONd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-GS-xSd">
+                                <rect key="frame" x="20" y="64" width="374" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="6qi-ci-51Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eeI-Jq-pYg" firstAttribute="trailing" secondItem="Pcn-GS-xSd" secondAttribute="trailing" constant="20" id="62r-Zc-P3J"/>
+                            <constraint firstItem="Pcn-GS-xSd" firstAttribute="top" secondItem="eeI-Jq-pYg" secondAttribute="top" constant="20" id="O7G-l1-OqK"/>
+                            <constraint firstItem="eeI-Jq-pYg" firstAttribute="bottom" secondItem="Pcn-GS-xSd" secondAttribute="bottom" constant="703" id="bdf-OM-wjK"/>
+                            <constraint firstItem="Pcn-GS-xSd" firstAttribute="leading" secondItem="eeI-Jq-pYg" secondAttribute="leading" constant="20" id="hZ9-RU-W11"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eeI-Jq-pYg"/>
                     </view>
+                    <connections>
+                        <outlet property="field" destination="Pcn-GS-xSd" id="43R-J4-53V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrE-vC-GqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
