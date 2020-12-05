@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         //setup
         if !UserDefaults().bool(forKey: "setup") {
             UserDefaults().set(true, forKey: "setup")
-             UserDefaults().set(0, forKey: "count")
+            UserDefaults().set(0, forKey: "count")
         }
         
         // get all current saved tasks
@@ -97,6 +97,15 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             tableView.beginUpdates()
+            
+            guard let  count = UserDefaults().value(forKey: "count") as? Int else {
+                return
+            }
+            
+            let newCount = count - 1
+            
+            UserDefaults().set(newCount, forKey: "count")
+            UserDefaults().removeObject(forKey: "task_\(newCount)")
             
             tasks.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)

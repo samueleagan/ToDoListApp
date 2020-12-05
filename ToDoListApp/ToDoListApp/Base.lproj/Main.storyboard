@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Add Task"/>
                                 <connections>
-                                    <action selector="didTapAdd" destination="BYZ-38-t0r" eventType="touchDown" id="CPb-ZC-Jfw"/>
+                                    <action selector="didTapAdd" destination="BYZ-38-t0r" eventType="touchDown" id="DA3-qI-aP2"/>
                                 </connections>
                             </button>
                         </subviews>
