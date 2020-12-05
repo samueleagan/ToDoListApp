@@ -23,12 +23,10 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         
         //setup
-        
         if !UserDefaults().bool(forKey: "setup") {
             UserDefaults().set(true, forKey: "setup")
              UserDefaults().set(0, forKey: "count")
         }
-        
         
         // get all current saved tasks
         updateTasks()
@@ -37,18 +35,14 @@ class ViewController: UIViewController {
     func updateTasks() {
         
         tasks.removeAll()
-        
         guard let count = UserDefaults().value(forKey: "count") as? Int else {
             return
         }
         
         for x in 0..<count {
-            
             if let task = UserDefaults().value(forKey: "task_\(x+1)") as? String  {
                 tasks.append(task)
-                
             }
-            
         }
         
         tableView.reloadData()
@@ -56,19 +50,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapAdd() {
-        let vc = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
-        vc.title = "New Task"
-        vc.update = {
+        let viewController = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
+        viewController.title = "New Task"
+        
+        viewController.update = {
             DispatchQueue.main.async {
             self.updateTasks()
             }
             
         }
-        navigationController?.pushViewController(vc, animated: true)
-        
+        navigationController?.pushViewController(viewController, animated: true)
     }
-
-
 }
 
 extension ViewController: UITableViewDelegate {
@@ -81,11 +73,9 @@ extension ViewController: UITableViewDelegate {
                viewController.task = tasks[indexPath.row]
                navigationController?.pushViewController(viewController, animated: true)
                
-           }
     }
+}
     
-
-
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -114,7 +104,6 @@ extension ViewController: UITableViewDataSource {
             tableView.endUpdates()
         }
     }
-    
 }
 
 
