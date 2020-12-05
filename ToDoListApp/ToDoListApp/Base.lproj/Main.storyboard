@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mjp-hK-zWJ">
-                                <rect key="frame" x="0.0" y="213" width="414" height="649"/>
+                                <rect key="frame" x="0.0" y="165" width="414" height="697"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Fud-f9-ZTa">
@@ -30,7 +30,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQO-Wj-OoQ">
-                                <rect key="frame" x="146" y="129" width="122" height="49"/>
+                                <rect key="frame" x="146" y="100" width="122" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Add Task"/>
                                 <connections>
@@ -44,8 +44,8 @@
                             <constraint firstItem="mjp-hK-zWJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4GD-hV-G0W"/>
                             <constraint firstItem="DQO-Wj-OoQ" firstAttribute="centerX" secondItem="mjp-hK-zWJ" secondAttribute="centerX" id="NLp-4g-uIM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mjp-hK-zWJ" secondAttribute="trailing" id="aY5-WQ-A93"/>
-                            <constraint firstItem="DQO-Wj-OoQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="iwC-sF-tpY"/>
-                            <constraint firstItem="mjp-hK-zWJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="k5n-EA-P5r"/>
+                            <constraint firstItem="DQO-Wj-OoQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="iwC-sF-tpY"/>
+                            <constraint firstItem="mjp-hK-zWJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="k5n-EA-P5r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

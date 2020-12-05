@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Tasks"
+        self.title = "To Do List App"
         
         tableView.delegate = self
         tableView.dataSource = self
