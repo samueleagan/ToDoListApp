@@ -76,10 +76,10 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let vc = storyboard?.instantiateViewController(identifier: "task") as! TaskViewController
-               vc.title = "New Task"
-               vc.task = tasks[indexPath.row]
-               navigationController?.pushViewController(vc, animated: true)
+        let viewController = storyboard?.instantiateViewController(identifier: "task") as! TaskViewController
+               viewController.title = "New Task"
+               viewController.task = tasks[indexPath.row]
+               navigationController?.pushViewController(viewController, animated: true)
                
            }
     }
@@ -98,6 +98,21 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = tasks[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            
+            tasks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            tableView.endUpdates()
+        }
     }
     
 }
