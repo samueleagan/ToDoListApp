@@ -1,1 +1,14 @@
 
+                                            Changes different from detailed description document
+                                                        
+Project Name: To Do List App 
+
+Team Members: 
+Samuel Eagan, Sumana Reddy Reddybathula
+
+The changes we have made form detailed description document are... 
+
+- We have made the project ad view controller rather than tab bar controller.
+- Removed UI Text fiels and replaced with table bar to view the tasks entered by user.
+- added a "save" bar button to save the entered tasks.
+
